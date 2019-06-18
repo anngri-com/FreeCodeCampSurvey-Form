@@ -1,0 +1,98 @@
+.item1 { 
+  grid-area: header; 
+  font-size: 30px;
+  background-color: #bde4f4;
+}
+.item2 { 
+  grid-area: left; 
+}
+.item3 { 
+  grid-area: center;
+  background-color: #f5feff; 
+  font-size: 18px;
+}
+.item4 { 
+  grid-area: right; 
+}
+.item5 { 
+  grid-area: footer; 
+  background-color: #bde4f4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left header header header header right'
+    'left center center center center right'
+    'left footer footer footer footer right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #68ccf3;;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #1ea7dd;;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+
+.radio {
+  float: left;
+  width: 30px;
+  margin-top: 10px;
+}
+
+input[type="radio"]{
+  float: left;
+}
+
+span{
+  margin-top: 4px;
+  position:absolute;
+}
