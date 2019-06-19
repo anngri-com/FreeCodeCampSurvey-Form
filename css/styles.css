@@ -3,6 +3,10 @@
   font-size: 30px;
   background-color: #bde4f4;
 }
+
+p {
+  font-size: 20px;
+}
 .item2 { 
   grid-area: left; 
 }
@@ -51,7 +55,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+button {
   background-color: #68ccf3;;
   color: white;
   padding: 12px 20px;
@@ -61,7 +65,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+button:hover {
   background-color: #1ea7dd;;
 }
 
@@ -88,11 +92,46 @@ input[type=submit]:hover {
   margin-top: 10px;
 }
 
-input[type="radio"]{
-  float: left;
+span#radio {
+  position:absolute;
 }
 
-span{
-  margin-top: 4px;
+.checkbox {
+  float: left;
+  width: 38px;
+}
+
+span#checkbox {
+  width: 150px;
   position:absolute;
+  float: left;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type=checkbox]{
+  flex: none;
+}
+
+.safety-class {
+  float: left;
+  width: 10px;
+  margin-top: 10px;
+}
+
+span#safety {
+  width: 150px;
+  position:absolute;
+  float: left;
+  margin-top: -23px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.comments {
+  float: left;
+  width: 75%;
+  margin-top: 35px;
 }
